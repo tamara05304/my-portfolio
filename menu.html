@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science-Inspired Recipes | Tamara Damaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-microscope"></i> Tamara Damaris
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Science-Inspired Recipes</h1>
+            <p class="fade-in">Lab-tested, student-approved creations that blend microbiology with culinary arts</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="filter-options slide-up">
+                <button class="btn btn-primary" data-filter="all">All Recipes</button>
+                <button class="btn btn-outline" data-filter="fermented">Fermented</button>
+                <button class="btn btn-outline" data-filter="traditional">Traditional</button>
+                <button class="btn btn-outline" data-filter="plant-based">Plant-Based</button>
+            </div>
+            
+            <div class="recipe-cards" id="recipeContainer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div class="recipe-modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalRecipeTitle"></h2>
+            <img id="modalRecipeImage" src="" alt="">
+            <div class="recipe-meta">
+                <span><i class="fas fa-clock"></i> <span id="modalRecipeTime"></span></span>
+                <span><i class="fas fa-users"></i> Serves <span id="modalRecipeServings"></span></span>
+            </div>
+            <div class="recipe-details">
+                <div class="ingredients">
+                    <h3><i class="fas fa-list-ul"></i> Ingredients</h3>
+                    <ul id="modalRecipeIngredients"></ul>
+                </div>
+                <div class="instructions">
+                    <h3><i class="fas fa-list-ol"></i> Instructions</h3>
+                    <ol id="modalRecipeInstructions"></ol>
+                </div>
+            </div>
+            <div class="science-tips">
+                <h3><i class="fas fa-flask"></i> The Science Behind This Recipe</h3>
+                <ul id="modalRecipeScience"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tamara Damaris</h3>
+                    <p>BSc Microbiology Student<br>
+                    Jomo Kenyatta University of Agriculture and Technology</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:tamaraadamaris50@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tamara Damaris. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

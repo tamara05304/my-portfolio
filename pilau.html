@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Pilau | Tamara's Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Recipe Detail Styles */
+        .recipe-header {
+            background: linear-gradient(rgba(122, 32, 72, 0.8), rgba(122, 32, 72, 0.8)), 
+                        url('./images/spices-bg.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .recipe-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .recipe-description {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .recipe-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .recipe-hero {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 2rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .ingredients, .instructions {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(122, 32, 72, 0.1);
+        }
+        
+        .ingredients h2, .instructions h2 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .ingredients ul {
+            list-style: none;
+        }
+        
+        .ingredients li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .ingredients li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+        }
+        
+        .step {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(122, 32, 72, 0.1);
+        }
+        
+        .step h3 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .science-tips {
+            grid-column: 1 / -1;
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        
+        .science-tips h3 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .science-tips ul {
+            list-style: none;
+        }
+        
+        .science-tips li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .science-tips li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent);
+        }
+        
+        .back-btn {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-microscope"></i> Tamara Damaris
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="recipe-header">
+        <div class="container">
+            <h1>Bomb Pilau</h1>
+            <p class="recipe-description">Traditional spiced rice with scientifically optimized cooking methods</p>
+            <div class="recipe-actions">
+                <a href="#" class="btn btn-primary"><i class="fas fa-print"></i> Print Recipe</a>
+                <a href="#" class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <img src="./images/pilau.jpg" alt="Bomb Pilau" class="recipe-hero">
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2><i class="fas fa-shopping-basket"></i> Ingredients</h2>
+                <h3>Pilau Masala (Spice Mix):</h3>
+                <ul>
+                    <li>1 tsp cloves</li>
+                    <li>2 tbsp cumin seeds</li>
+                    <li>½ tbsp black peppercorn</li>
+                    <li>12 pods cardamom</li>
+                    <li>1 stick cinnamon</li>
+                </ul>
+                
+                <h3>Rice Pilau:</h3>
+                <ul>
+                    <li>2 cups basmati rice</li>
+                    <li>5 medium potatoes (quartered)</li>
+                    <li>¼ cup vegetable oil</li>
+                    <li>2 red onions (thinly sliced)</li>
+                    <li>4 cloves garlic (minced)</li>
+                    <li>2 tbsp ginger (minced)</li>
+                    <li>1 serrano chile (finely chopped)</li>
+                    <li>1 tbsp pilau masala</li>
+                    <li>2 beef stock cubes</li>
+                    <li>¼ cup fresh cilantro (chopped)</li>
+                    <li>1 lb beef sirloin (cubed)</li>
+                    <li>3 Roma tomatoes (diced)</li>
+                    <li>4 cups water</li>
+                    <li>2 bay leaves</li>
+                    <li>Salt to taste</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2><i class="fas fa-list-ol"></i> Method</h2>
+                <div class="step">
+                    <h3>Step 1: Make the Pilau Masala</h3>
+                    <p>Dry roast cumin, black pepper, cinnamon, cardamom and cloves in a pan until fragrant. Blend to powder (coffee grinder works!). Use 1-1½ tbsp for recipe. Store extra in airtight container (lasts 3 months).</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 2: Caramelize Onions</h3>
+                    <p>Heat oil in pot, fry onions 10-15 mins until golden brown (don't burn!). Add garlic, ginger, chile - cook 1-2 mins until your kitchen smells AMAZING.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 3: Brown the Beef</h3>
+                    <p>Add beef, pilau masala, stock cubes, bay leaves, cilantro, and salt. Cook 8-10 mins until meat is browned and caramelized (this is where the flavor comes from!).</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 4: Tomato Time</h3>
+                    <p>Add tomatoes, cook 4-5 mins until they break down. Stir in potatoes and water, boil for 10 mins.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 5: Rice Finish</h3>
+                    <p>Add rice, cover TIGHTLY with foil (this is the secret!), then lid. Cook on low 20 mins until liquid is absorbed. Fluff with fork and serve with kachumbari.</p>
+                </div>
+            </div>
+
+            <div class="science-tips">
+                <h3><i class="fas fa-flask"></i> The Science Behind This Recipe</h3>
+                <ul>
+                    <li>Dry roasting spices releases essential oils that enhance flavor and aroma</li>
+                    <li>Caramelizing onions creates Maillard reactions that develop deep umami flavors</li>
+                    <li>The tight foil seal creates a steamy environment for perfect rice texture</li>
+                    <li>Cumin and cardamom contain antimicrobial compounds that may aid digestion</li>
+                    <li>Slow cooking allows collagen in beef to break down into gelatin for tenderness</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="back-btn">
+            <a href="menu.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Recipes</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tamara Damaris</h3>
+                    <p>BSc Microbiology Student<br>
+                    Jomo Kenyatta University of Agriculture and Technology</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:tamaraadamaris50@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tamara Damaris. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

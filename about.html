@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Tamara | Microbio + Flavor Guru</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    /* 3D Card Effects */
+    .profile-card {
+      transform-style: preserve-3d;
+      transition: all 0.5s ease;
+    }
+    .profile-card:hover {
+      transform: rotateY(10deg) rotateX(5deg);
+    }
+    .profile-img {
+      transform: translateZ(20px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    
+    /* Gen-Z Gradient Text */
+    .gradient-text {
+      background: linear-gradient(45deg, #5C0013, #D4A017);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    /* Microbe Animation */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    .microbe {
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 5px 15px rgba(92,0,19,0.3));
+    }
+
+    /* Circular Image Container */
+    #modalRecipeImage {
+        width: 150px; /* Set a fixed width for the circle */
+        height: 150px; /* Set a fixed height for the circle */
+        border-radius: 50%; /* Make the container circular */
+        object-fit: cover; /* Ensure the image fits within the circle */
+        display: block; /* Center the image */
+        margin: 0 auto; /* Center the image horizontally */
+        border: 3px solid var(--burgundy-medium); /* Optional: Add a border */
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Tamara Damaris</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="about-hero" data-aos="fade-in">
+  <div class="container">
+    <h2 class="gradient-text">🧪 Lab Rat Turned Flavor Scientist</h2>
+    <p>How a BSc Microbiology student at JKUAT became obsessed with the <span class="gradient-text">science of dope flavors</span></p>
+    <div class="microbe">🦠</div>
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="container">
+    <div class="profile-card" data-aos="flip-up">
+      <div class="profile-img">
+        <img src="./tamara.jpg" alt="Thats me" class="profile-pic">
+        <div class="lab-badge">
+          <i class="fas fa-microscope"></i>
+          <span>JKUAT Microbiology</span>
+        </div>
+      </div>
+      <div class="profile-info">
+        <h3 data-aos="fade-left">Tamara Damaris <span class="verified">✓</span></h3>
+        <p class="title" data-aos="fade-left" data-aos-delay="100">BSc Microbiology Candidate | Flavor Alchemist</p>
+        
+        <div class="edu-card" data-aos="zoom-in">
+          <i class="fas fa-university"></i>
+          <div>
+            <h4>Jomo Kenyatta University of Agriculture and Technology</h4>
+            <p>Bachelor of Science in Microbiology (Expected 2025)</p>
+            <p class="highlight">Research Focus: Food Fermentation & Microbial Biotechnology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="science-journey">
+  <div class="container">
+    <h2 data-aos="fade-up">My Glow-Up Journey</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-badge">1</div>
+        <div class="timeline-content">
+          <h3>The Petri Dish Era 🧫</h3>
+          <p>First fell in love with microbes during my undergrad at JKUAT, specializing in how <strong>lactic acid bacteria</strong> transform food textures and flavors.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-badge">2</div>
+        <div class="timeline-content">
+          <h3>Campus Kitchen Experiments 👩🏾‍🍳</h3>
+          <p>Started testing fermentation techniques on classmates - what began as meal prep became legit flavor research with actual data collection.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-badge">3</div>
+        <div class="timeline-content">
+          <h3>Flavor Architect Era ✨</h3>
+          <p>Now developing <strong>scientifically-backed recipes</strong> that combine East African traditions with microbial science from my JKUAT research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="future-goals">
+  <div class="container">
+    <div class="goals-grid">
+      <div class="goal-card" data-aos="flip-left">
+        <div class="goal-icon">🔬</div>
+        <h3>Academic Goals</h3>
+        <ul>
+          <li>Publish undergrad research on <strong>indigenous fermentation</strong></li>
+          <li>Pursue MSc in <strong>Food Biotechnology</strong></li>
+          <li>Develop <strong>probiotic-rich</strong> Kenyan superfoods</li>
+        </ul>
+      </div>
+      
+      <div class="goal-card" data-aos="flip-right">
+        <div class="goal-icon">🍴</div>
+        <h3>Culinary Dreams</h3>
+        <ul>
+          <li>Launch <strong>science-backed</strong> food product line</li>
+          <li>Create <strong>microbe-forward</strong> cooking show</li>
+          <li>Open <strong>fermentation lab/restaurant</strong> hybrid</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta" data-aos="zoom-in">
+  <div class="container">
+    <h2>Let's Collab on Some Science!</h2>
+    <p>Whether you're into microbes, food, or both - slide into my DMs</p>
+    <a href="mailto:tamaraadamaris50@gmail.com" class="cta-button">
+      <i class="fas fa-paper-plane"></i> Hit Me Up
+    </a>
+  </div>
+</section>
+
+<div class="recipe-modal" id="recipeModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalRecipeTitle"></h2>
+        <img id="modalRecipeImage" src="" alt="Recipe Image">
+        <!-- Other modal content -->
+    </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Tamara Moraa | JKUAT Microbiology Gang</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+</body>
+</html>
