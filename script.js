@@ -3,7 +3,7 @@ const recipes = [
     {
         id: 1,
         title: "Chicken Pizza",
-        image: "./pizza.jpg",
+        image: "pizza.jpg",
         category: "fermented",
         time: "2 hours (includes fermentation)",
         servings: 4,
@@ -46,7 +46,7 @@ const recipes = [
     {
         id: 2,
         title: "Bomb Pilau",
-        image: "./pilau.jpg",
+        image: "pilau.jpg",
         category: "traditional",
         time: "1 hour 15 mins",
         servings: 6,
